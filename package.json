@@ -1,0 +1,19 @@
+{
+  "name": "overengineered-fizz-buzz",
+  "version": "1.0.0",
+  "description": "A safe and flexibile implementation of FizzBuzz",
+  "main": "index.js",
+  "repository": "https://github.com/roninjin10/overengineered-fizz-buzz.git",
+  "author": "William Cory (github: roninjin10)",
+  "license": "MIT",
+  "scripts": {
+    "prettier": "prettier --write \"client/**/*.{ts,tsx,css}\"",
+    "build": "ts-node ./scripts/build.ts",
+    "dev:front": "ts-node ./scripts/dev.ts",
+    "dev:back": "nodemon",
+    "nuke": "yarn cache clean && rm -r node_modules/"
+  },
+  "dependencies": {
+    "typescript": "^3.2.2"
+  }
+}
